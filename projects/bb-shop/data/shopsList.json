@@ -1,0 +1,55 @@
+{
+  "retCode": "200",
+  "retMsg": "success",
+  "data": [
+    {
+      "typeName": "家电",
+      "type": "01",
+      "data": [
+
+      ]
+    },
+    {
+      "typeName": "果蔬",
+      "type": "01",
+      "data": [
+
+      ]
+    },{
+      "typeName": "服装",
+      "type": "01",
+      "data": [
+
+      ]
+    },{
+      "typeName": "手机",
+      "type": "01",
+      "data": [
+
+      ]
+    },{
+      "typeName": "鞋子",
+      "type": "01",
+      "data": [
+
+      ]
+    },{
+      "typeName": "箱包",
+      "data": [
+
+      ]
+    },{
+      "typeName": "图书",
+      "type": "01",
+      "data": [
+
+      ]
+    },{
+      "typeName": "母婴",
+      "type": "01",
+      "data": [
+
+      ]
+    }
+  ]
+}
