@@ -1,0 +1,154 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/* 视频容器 */
+.vContainer {
+  width: 640px;
+	height: 360px;
+  margin: 30px auto;
+	position: relative;
+	overflow: hidden;
+	background-color: #DEDEDE;
+}
+/* 标题 */
+.caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+  color: #CCCCCC;
+  background-color: #1F1F1F;
+  z-index: 1;
+}
+/* 控制区域 */
+.control {
+  position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+  color: #CCCCCC;
+  background-color: #1F1F1F;
+	z-index: 1;
+}
+/* 控制区 上部分 */
+.control .top {
+  height: 11px;
+	border-bottom: 1px solid #404040;
+	padding: 1px 5px;
+	background: #1F1F1F;
+}
+/* 控制区 上部分 进度条 */
+.control .top .progress {
+  width: 85%;
+	height: 10px;
+	position: relative;
+	float: left;
+	cursor: pointer;
+	background: #404040;
+  border-radius: 5px;
+}
+.control .top .progress .timeBar {
+  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 5px;
+}
+/* 控制区 上部分 进度条 时间条 */
+.control .top .progress .timeBar {
+	z-index: 3;
+	width: 0px;
+	background: #F9D43A;
+}
+/* 控制区 上部分 时间 */
+.control .top .time {
+	width: 15%;
+  float: right;
+	text-align: center;
+	font-size: 0px;
+	line-height: 12px;
+}
+.control .top .time span {
+  font-size: 11px;
+}
+/* 控制区 下部分 */
+.control .bottom {
+  clear: both;
+	background: #1F1F1F;
+}
+/* 控制区 统一处理button样式 */
+.control .button {
+	float: left;
+	width: 32px;
+	height: 32px;
+	padding: 0 5px;
+	cursor: pointer;
+}
+/* 控制区 按钮图标 */
+.control .bottom .play {
+	background: url("play.png") no-repeat 7px 2px;
+}
+.control .bottom .pause {
+	background: url("pause.png") no-repeat 7px 2px;
+}
+.control .bottom .stop {
+	background: url("stop.png") no-repeat 7px 2px;
+}
+.control .bottom .sound {
+	background: url("sound.png") no-repeat 7px 2px;
+}
+.control .bottom .mute {
+	background: url("mute.png") no-repeat 7px 2px;
+}
+.control .bottom .text {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 32px;
+	text-align: center;
+	color: #777777;
+}
+.control .bottom .selected {
+  color: #FFFFFF;
+}
+.control .bottom .sound,
+.control .bottom .mute {
+  float: right;
+}
+/* 控制区 声音条 */
+.control .bottom .volume {
+	position: relative;
+	cursor: pointer;
+  float: right;
+	width: 70px;
+	height: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+  background-color: #404040;
+}
+.control .bottom .volumeBar {
+	display: block;
+  width: 0px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #EEEEEE;
+	z-index: 2;
+}
+/* loading */
+.loading {
+  position: absolute;
+  width: 54px;
+  height: 55px;
+  left: 50%;
+  top: 50%;
+  margin-left: -27px;
+  margin-top: -27px;
+  z-index: 1;
+  background: url("../image/loading.gif") no-repeat 0px 0px;
+}

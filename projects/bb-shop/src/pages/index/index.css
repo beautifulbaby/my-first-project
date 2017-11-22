@@ -37,6 +37,11 @@ nav ul li a
     color: #999; 
 }
 
+nav ul li a:hover
+{
+    color: rgb(204, 1, 1);
+}
+
 /* 页头搜索区 */
 .search
 {
@@ -46,7 +51,6 @@ nav ul li a
 
 .search .search1
 {
-    line-height: 150px;
     width: 300px;
     height: 50px;
 }
