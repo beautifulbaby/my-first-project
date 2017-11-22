@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Video 自定义</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="vContainer">
+      <!-- 视频元素 -->
+      <video id="myVideo" preload="metadata"/>
+        <!--<source src="http://video.mukewang.com/mk.mp4" type="video/mp4" />-->
+        <source src="../imooc.mp4" type="video/mp4" />
+        <source src="../imooc.webm" type="video/webm" />
+        <source src="../imooc.ogv" type="video/ogv" />
+        您的浏览器不支持video标签。
+      </video>
+      <!-- 标题 -->
+      <div class="caption">我自己的视频播放器</div>
+      <!-- 控制区 -->
+      <div class="control">
+        <!-- 控制区 上面区域 进度条和时间 -->
+        <div class="top">
+          <div class="progress">
+            <span class="timeBar"></span>
+          </div>
+          <div class="time">
+            <span id="currentTime">00:00</span>
+            <span>/</span>
+            <span id="duration">00:00</span>
+          </div>
+        </div>
+        <!-- 控制区 下面区域 按钮 -->
+        <div class="bottom">
+          <div class="button play" id="playBtn"></div>
+          <div class="button stop" id="stopBtn"></div>
+          <div class="button text selected" id="speed1Btn">x1</div>
+          <div class="button text" id="speed3Btn">x3</div>
+          <div class="volume">
+            <span class="volumeBar"></span>
+          </div>
+          <div class="button sound" id="soundBtn"></div>
+        </div>
+      </div>
+      <!-- loading -->
+      <div class="loading"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
