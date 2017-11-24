@@ -1,0 +1,63 @@
+/*
+    img-wrapper
+*/
+.img {
+    width: 820px;
+    height: 512px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper {
+    list-style: none; 
+    position: absolute;
+    display: flex; 
+}
+
+.img-item {
+    width: 820px;
+    list-style: none;
+    height: 512px;
+    float: left;
+    
+}
+
+.img-item:nth-child(1) {
+    background-image: url(img/1.png);
+    background-size: 100% 100%;
+    animation: 8s moved infinite;
+}
+.img-item:nth-child(2) {
+    background-image: url(img/2.png);
+    background-size: 100% 100%;
+}
+.img-item:nth-child(3) {
+    background-image: url(img/3.png);
+    background-size: 100% 100%;
+}
+.img-item:nth-child(4) {
+    background-image: url(img/4.png);
+    background-size: 100% 100%;
+}
+
+/*
+ 定义动画
+*/
+@keyframes moved {
+    0% {
+        margin-left: 0px;
+    }
+    25% {
+        margin-left: -820px;
+    }
+    50% {
+        margin-left: -1640px;
+    }
+    75% {
+        margin-left: -2460px;
+    }
+    100% {
+        margin-left: -3280px;
+    }
+}
