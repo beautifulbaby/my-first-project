@@ -7,6 +7,14 @@
   console.log(video);
   console.log(video2)
   console.log(video[0]);
+  /**
+   * 
+   * @param {*} seconds
+   * 自定义format方法 将传入seconds（时间），格式化成 10:52这种格式
+   * 这里使用了Math.floor方法，表示的是向下取整。比如有121秒，126/60 = 2.01 用Math.floor方法后就是2
+   * 这个时间format方法其实不够完整，没有小时的位数。而且操作也比较复杂
+   * 思考： 如何自定义一个比较简单的format时间方法
+   */
 	var timeFormat = function(seconds) {
 		var minite = Math.floor(seconds / 60);
     if(minite < 10) {
@@ -20,17 +28,28 @@
 	};
   
   // 标题和控制板显示/隐藏
+  /**
+   * @param {*} shouldShow  这个是一个布尔值参数，用来区分鼠标是进入还是出去当前的视频播放区域 
+   * 这个方法是监听鼠标在进出视频界面的时候执行的方法
+   * 知识点： JQuery的stop方法。停止当前正在执行的动画  
+   * animate方法，动画方法。参数1：css属性构成的对象。参数2，执行该动画方法需要的时间。
+   * 其实还有两个参数 easing设置动画的速度风格（贝塞尔曲线） callback，回调函数 
+   */
   var showTitleAndControl = function(shouldShow) {
     if(shouldShow) {
       $('.control').stop().animate({'bottom':0}, 500);
 			$('.caption').stop().animate({'top':0}, 500);
     } else {
-      $('.control').stop().animate({'bottom':-50}, 500);
+      $('.control').stop().animate({'bottom':-50}, 500); // 说明下面的那个菜单区高度应该是50
       $('.caption').stop().animate({'top':-50}, 500);
     }
   }
   
   // 播放和暂停切换
+  /**
+   * 通过监听当前是暂停还是播放状态来进行下一步操作。
+   * 这个函数回去自己尝试实现
+   */
   var playAndPause = function() {
     if(video[0].paused || video[0].ended) {
 			$('#playBtn').removeClass('play').addClass('pause');
@@ -43,6 +62,10 @@
   }
   
   // 结束视频
+  /**
+   * 该方法对应停止按钮
+   * 停止的时候需要给开始按钮修改样式
+   */
   var stopVideo = function() {
 		video[0].pause();
     updateProgress($('.progress').offset().left);
@@ -50,6 +73,11 @@
   }
   
   // 调整播放速度
+  /**
+   * 
+   * @param {*} speed 
+   * 哇，好多h5的接口没有用过啊
+   */
   var playSpeed = function(speed) {
     if(speed == 1) {
       $('#speed1Btn').addClass("selected");
