@@ -1,3 +1,7 @@
+
+body {
+    background: #f6f6f6;
+}
 /* 页头导航栏 */
 nav
 {
@@ -46,11 +50,74 @@ nav ul li a:hover
 .search
 {
     width: 100%;
-    height: 150px;
+    margin-top: 50px;
+    position: relative;
 }
 
-.search .search1
+.search .search-item
 {
-    width: 300px;
-    height: 50px;
+    width: 570px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.search-item .search-input{
+    width: 490px;
+    height: 35px;
+    padding: 4px;
+    border: 1px solid #eb0f0f;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 16px;
+    line-height: 35px;
+    outline: none;
+}
+
+.search-item .search-btn{
+    width: 70px;
+    height: 45px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    line-height: 45px;
+    background-color: #eb0f0f;
+    color: #fff;
+    border-radius: 0px 8px 8px 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.cart{
+    width: 180px;
+    height: 43px;
+    border:1px solid #eb0f0f;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    border-radius: 8px;
+    text-align: center;
+}
+.cart a{
+    text-decoration: none;
+    color: #eb0f0f;
+    font-size: 16px;
+    line-height: 43px;
+}
+
+.hot-words{
+    width: 570px;
+    height: 30px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+.hot-words a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 8px;
+}
+
+.hot-words .hot1{
+    color: #eb0f0f;
 }
