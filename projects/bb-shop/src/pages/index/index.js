@@ -1,15 +1,21 @@
-// window.onload=function(){
-//     alert('我是主页')
-// }
+const PLACEHOLDER = 'OPPO R11S'
 $(function() {
-    var test1 = 1
-    var test2 = 2
-    var test3 = 3
-    var test4 = 4
-    var test5 = 5
-    var test6 = 6
-    var test7 = 7    
-    var $ul = $('ul')
-    var ul = document.getElementsByTagName('ul')[0]
-    test1
+    var hotWords = []
+    var $searchInput = $('.search-input')
+    $searchInput.focus(function(){
+        $(this).attr('placeholder', '')
+    }).blur(function(){
+        $(this).attr('placeholder', PLACEHOLDER)
+    })
+
+    var $searchBtn = $('.search-btn')
+    $searchBtn.mouseenter(function(){
+        $(this).css('color','#ccc')
+    }).mouseleave(function(){
+        $(this).css('color','#fff')
+    })
+
+    // ajax请求部分
+
 })
+

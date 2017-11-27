@@ -1,0 +1,16 @@
+{
+    "retCode": "200",
+    "retMsg": "success",
+    "data": {
+        "shopsName": "OPPO旗舰店",
+        "service": [],
+        "imgList": [],
+        "stock": "",
+        "suit": [],
+        "buyType": [],
+        "shopsDes": {},
+        "shopsVedio": "",
+        "Specifications": {},
+        "evaluate": []
+    }
+}

@@ -1,0 +1,38 @@
+/*头部*/
+.header {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #e3e4e5;
+}
+
+/*商品详情区*/
+
+.container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-wrapper {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.info-wrapper {
+    width: 500px;
+}
+
+.span-label {
+    font-size: 12px;
+    color: #333;
+}
+
+.span-info {
+    font-size: 16px;
+    color: #c76923;
+}
