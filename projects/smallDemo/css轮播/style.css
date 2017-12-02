@@ -40,13 +40,17 @@
     background-image: url(img/4.png);
     background-size: 100% 100%;
 }
+.img-item:nth-child(5) {
+    background-image: url(img/1.png);
+    background-size: 100% 100%;
+}
 
 /*
  定义动画
 */
 @keyframes moved {
     0% {
-        margin-left: 0px;
+        transform: translate(0px);
     }
     25% {
         margin-left: -820px;
