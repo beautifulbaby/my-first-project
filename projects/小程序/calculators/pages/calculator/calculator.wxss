@@ -1,0 +1,253 @@
+/* pages/calculator/calculator.wxss */
+/*
+  icon部分
+*/
+@import "../../lib/font.wxss";
+
+/*
+  全局content部分
+*/
+.content {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: 100%;
+  height: 1206rpx;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 62rpx
+}
+
+/*
+  上面显示区域
+*/
+.show-content {
+  padding: 0 20rpx 0 20rpx;
+  flex: 2;
+  background: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  word-break : break-all;
+}
+
+/*
+ 下方操作部分
+*/
+.operate-content {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  background: #454545;
+}
+
+.op-title {
+  width: 100%;
+  height: 40rpx;
+  border-bottom: 1rpx solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.t-border {
+  width: 60rpx;
+  border-top: 1rpx solid #383838; 
+}
+
+.operator {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: stretch;
+}
+
+.op-num {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.op-symbol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #CD3333;
+}
+
+.sy-item , .num-group {
+  flex: 1;
+  border-bottom: 1rpx solid rgba(38,38,38,.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.num-item {
+  flex: 1;
+  height: 100%;
+  border-right: 1rpx solid rgba(38,38,38,.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+  0 特殊区块
+*/
+.zero {
+  flex: 2;
+}
+
+/*
+  无边框块
+*/
+.no-border {
+  border: 0;
+}
+
+/*
+  图标字体
+*/
+.incofont {
+  flex: 1;
+}
+
+.icon-c:after {
+  font-family: "iconfont";
+  content: '\e606';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-ne:after {
+  font-family: "iconfont";
+  content: '\e63f';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-del:after {
+  font-family: "iconfont";
+  content: '\e750';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-add:after {
+  font-family: "iconfont";
+  content: '\e60f';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-sub:after {
+  font-family: "iconfont";
+  content: '\e627';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-mul:after {
+  font-family: "iconfont";
+  content: '\e643';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-divide:after {
+  font-family: "iconfont";
+  content: '\e632';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-equal:after {
+  font-family: "iconfont";
+  content: '\e633';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-one:after {
+  font-family: "iconfont";
+  content: '\e609';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-two:after {
+  font-family: "iconfont";
+  content: '\e610';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-three:after {
+  font-family: "iconfont";
+  content: '\e60a';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-four:after {
+  font-family: "iconfont";
+  content: '\e60c';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-five:after {
+  font-family: "iconfont";
+  content: '\e60b';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-six:after {
+  font-family: "iconfont";
+  content: '\e60d';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-seven:after {
+  font-family: "iconfont";
+  content: '\e611';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-eight:after {
+  font-family: "iconfont";
+  content: '\e613';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-nine:after {
+  font-family: "iconfont";
+  content: '\e60e';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-zero:after {
+  font-family: "iconfont";
+  content: '\e614';
+  font-size: 60rpx;
+  color:#ffffff;
+}
+
+.icon-point:after {
+  font-family: "iconfont";
+  content: '\e635';
+  font-size: 60rpx;
+  color:#ffffff;
+}

@@ -1,0 +1,97 @@
+<!--pages/calculator/calculator.wxml-->
+<view class="content">
+  <view class="show-content">
+    <view class="number" style="color:{{defaultColor}}">
+      {{show}}
+    </view>
+    <view class="number result" wx:if="{{isResult}}">
+      {{result}}
+    </view>
+  </view>
+  <view class="operate-content"  wx:if="{{showOp}}">
+    <view class="op-title" bindtap="opShow">
+      <view class="t-border"></view>
+      <view class="t-border"></view>
+      <view class="t-border"></view>
+    </view>
+    <view class="operator">
+      <view class="op-num">
+        <view class="num-group">
+          <view class="num-item" bindtap="clear" style="background: {{clearColor}}">
+            <text class="iconfont icon-c"></text>
+          </view>
+          <view class="num-item" bindtap="ne" style="background: {{neColor}}">
+            <text class="iconfont icon-ne"></text>
+          </view>
+          <view class="num-item" bindtap="del" style="background: {{delColor}}">
+            <text class="iconfont icon-del"></text>
+          </view>
+        </view>
+        <view class="num-group">
+          <view class="num-item" bindtap="seven" style="background: {{sevenColor}}">
+            <text class="iconfont icon-seven"></text>
+          </view>
+          <view class="num-item" bindtap="eight" style="background: {{eightColor}}">
+            <text class="iconfont icon-eight"></text>
+          </view>
+          <view class="num-item" bindtap="nine" style="background: {{nineColor}}">
+            <text class="iconfont icon-nine"></text>
+          </view>
+        </view>
+        <view class="num-group">
+          <view class="num-item" bindtap="four" style="background: {{fourColor}}">
+            <text class="iconfont icon-four"></text>
+          </view>
+          <view class="num-item" bindtap="five" style="background: {{fiveColor}}">
+            <text class="iconfont icon-five"></text>
+          </view>
+          <view class="num-item" bindtap="six" style="background: {{sixColor}}">
+            <text class="iconfont icon-six"></text>
+          </view>
+        </view>
+        <view class="num-group">
+          <view class="num-item" bindtap="one" style="background: {{oneColor}}">
+            <text class="iconfont icon-one"></text>
+          </view>
+          <view class="num-item" bindtap="two" style="background: {{twoColor}}">
+            <text class="iconfont icon-two"></text>
+          </view>
+          <view class="num-item" bindtap="three" style="background: {{threeColor}}">
+            <text class="iconfont icon-three"></text>
+          </view>
+        </view>
+        <view class="num-group">
+          <view class="num-item zero" bindtap="zero" style="background: {{zeroColor}}">
+            <text class="iconfont icon-zero"></text>
+          </view>
+          <view class="num-item no-border" bindtap="point" style="background: {{pointColor}}">
+            <text class="iconfont icon-point"></text>
+          </view>
+        </view>
+      </view>
+      <view class="op-symbol">
+        <view class="sy-item" bindtap="divide" style="background: {{divideColor}}">
+          <text class="iconfont icon-divide"></text>
+        </view>
+        <view class="sy-item" bindtap="mul" style="background: {{mulColor}}">
+          <text class="iconfont icon-mul"></text>
+        </view>
+        <view class="sy-item" bindtap="sub" style="background: {{subColor}}">
+          <text class="iconfont icon-sub"></text>
+        </view>
+        <view class="sy-item" bindtap="add" style="background: {{addColor}}">
+          <text class="iconfont icon-add"></text>
+        </view>
+        <view class="sy-item" bindtap="equal" style="background: {{equalColor}}">
+          <text class="iconfont icon-equal"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 隐藏上方操作区域后现实的东西 -->
+  <view class="op-title" bindtap="opShow" wx:if="{{!showOp}}" style="background:#454545">
+      <view class="t-border"></view>
+      <view class="t-border"></view>
+      <view class="t-border"></view>
+    </view>
+</view>
